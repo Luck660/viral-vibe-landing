@@ -1,44 +1,35 @@
-
 import { Play, Clock, Award, Download } from "lucide-react";
-
 const ModulesSection = () => {
-  const modules = [
-    {
-      number: "01",
-      title: "Fundamentos da Viralização",
-      description: "Entenda como funciona o algoritmo das principais redes sociais",
-      duration: "2h 30min",
-      lessons: 8,
-      color: "brand-yellow"
-    },
-    {
-      number: "02", 
-      title: "Criação de Conteúdo Viral",
-      description: "Técnicas para criar posts que geram alto engajamento",
-      duration: "3h 15min",
-      lessons: 12,
-      color: "brand-gold"
-    },
-    {
-      number: "03",
-      title: "Estratégias de Crescimento",
-      description: "Como crescer sua base de seguidores organicamente",
-      duration: "2h 45min", 
-      lessons: 10,
-      color: "brand-red"
-    },
-    {
-      number: "04",
-      title: "Monetização e Vendas",
-      description: "Transforme seu conteúdo em uma máquina de vendas",
-      duration: "4h 20min",
-      lessons: 15,
-      color: "brand-orange"
-    }
-  ];
-
-  return (
-    <section className="py-20 bg-dark-bg relative overflow-hidden">
+  const modules = [{
+    number: "01",
+    title: "Fundamentos da Viralização",
+    description: "Entenda como funciona o algoritmo das principais redes sociais",
+    duration: "2h 30min",
+    lessons: 8,
+    color: "brand-yellow"
+  }, {
+    number: "02",
+    title: "Criação de Conteúdo Viral",
+    description: "Técnicas para criar posts que geram alto engajamento",
+    duration: "3h 15min",
+    lessons: 12,
+    color: "brand-gold"
+  }, {
+    number: "03",
+    title: "Estratégias de Crescimento",
+    description: "Como crescer sua base de seguidores organicamente",
+    duration: "2h 45min",
+    lessons: 10,
+    color: "brand-red"
+  }, {
+    number: "04",
+    title: "Monetização e Vendas",
+    description: "Transforme seu conteúdo em uma máquina de vendas",
+    duration: "4h 20min",
+    lessons: 15,
+    color: "brand-orange"
+  }];
+  return <section className="py-20 bg-dark-bg relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-10 right-10 w-64 h-64 bg-brand-gold/10 rounded-full blur-3xl"></div>
@@ -56,12 +47,9 @@ const ModulesSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {modules.map((module, index) => (
-            <div 
-              key={index}
-              className="glass-card p-8 hover-scale animate-fade-in-up group"
-              style={{ animationDelay: `${index * 0.2}s` }}
-            >
+          {modules.map((module, index) => <div key={index} className="glass-card p-8 hover-scale animate-fade-in-up group" style={{
+          animationDelay: `${index * 0.2}s`
+        }}>
               {/* Module Header */}
               <div className="flex items-center justify-between mb-6">
                 <div className={`text-6xl font-black text-${module.color} opacity-20 group-hover:opacity-40 transition-opacity`}>
@@ -72,10 +60,7 @@ const ModulesSection = () => {
                     <Clock className="w-4 h-4" />
                     <span className="text-sm">{module.duration}</span>
                   </div>
-                  <div className="flex items-center space-x-1">
-                    <Play className="w-4 h-4" />
-                    <span className="text-sm">{module.lessons} aulas</span>
-                  </div>
+                  
                 </div>
               </div>
 
@@ -103,13 +88,11 @@ const ModulesSection = () => {
 
               {/* Progress Bar */}
               <div className="w-full bg-white/10 rounded-full h-2">
-                <div 
-                  className={`h-2 bg-gradient-to-r from-${module.color} to-brand-red rounded-full transition-all duration-1000 group-hover:w-full`}
-                  style={{ width: '0%' }}
-                ></div>
+                <div className={`h-2 bg-gradient-to-r from-${module.color} to-brand-red rounded-full transition-all duration-1000 group-hover:w-full`} style={{
+              width: '0%'
+            }}></div>
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Course Stats */}
@@ -122,8 +105,8 @@ const ModulesSection = () => {
                 <div className="text-gray-400">Horas de Conteúdo</div>
               </div>
               <div>
-                <div className="text-3xl font-bold gradient-text">45+</div>
-                <div className="text-gray-400">Videoaulas</div>
+                <div className="text-3xl font-bold gradient-text">23+</div>
+                <div className="text-gray-400">Conteúdos</div>
               </div>
               <div>
                 <div className="text-3xl font-bold gradient-text">20+</div>
@@ -137,8 +120,6 @@ const ModulesSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ModulesSection;

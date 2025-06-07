@@ -1,10 +1,6 @@
-
-
 import { Heart, Instagram, Mail } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-dark-card border-t border-white/10 py-12">
+  return <footer className="bg-dark-card border-t border-white/10 py-12">
       <div className="section-container">
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           {/* Logo and Description */}
@@ -15,27 +11,18 @@ const Footer = () => {
             <p className="text-gray-400 mb-4">
               O curso mais completo para viralizar nas redes sociais e transformar sua presença digital em uma máquina de vendas.
             </p>
-            <div className="flex items-center text-gray-400">
-              <Heart className="w-4 h-4 mr-2 text-red-400" />
-              <span className="text-sm">Feito com amor para empreendedores</span>
-            </div>
+            
           </div>
 
           {/* Contact Info */}
           <div>
             <h4 className="text-lg font-bold text-white mb-4">Contato</h4>
             <div className="space-y-3">
-              <a 
-                href="mailto:fferraz.oficial@contato.com" 
-                className="flex items-center text-gray-400 hover:text-brand-red transition-colors"
-              >
+              <a href="mailto:fferraz.oficial@contato.com" className="flex items-center text-gray-400 hover:text-brand-red transition-colors">
                 <Mail className="w-4 h-4 mr-3" />
                 <span>fferraz.oficial@contato.com</span>
               </a>
-              <a 
-                href="https://instagram.com/fferraz_ofc" 
-                className="flex items-center text-gray-400 hover:text-brand-red transition-colors"
-              >
+              <a href="https://instagram.com/fferraz_ofc" className="flex items-center text-gray-400 hover:text-brand-red transition-colors">
                 <Instagram className="w-4 h-4 mr-3" />
                 <span>@fferraz_ofc</span>
               </a>
@@ -48,14 +35,9 @@ const Footer = () => {
           <p className="text-gray-400">
             © 2024 Torne-se uma Referência. Todos os direitos reservados.
           </p>
-          <p className="text-sm text-gray-500 mt-2">
-            Este produto não garante a obtenção de resultados. Qualquer referência ao desempenho passado não representa uma garantia de resultados futuros.
-          </p>
+          
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
-

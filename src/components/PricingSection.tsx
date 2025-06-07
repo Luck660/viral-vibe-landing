@@ -1,27 +1,14 @@
-
 import { Button } from "@/components/ui/button";
 import { Check, Clock, Shield, Gift } from "lucide-react";
-
 const PricingSection = () => {
-  const features = [
-    "15+ horas de videoaulas exclusivas",
-    "45+ lições práticas e aplicáveis", 
-    "20+ templates prontos para usar",
-    "Suporte direto por 90 dias",
-    "Certificado de conclusão",
-    "Atualizações gratuitas para sempre",
-    "Acesso vitalício ao conteúdo",
-    "Grupo VIP no Telegram",
-    "Bônus: E-book de Growth Hacking",
-    "Bônus: Pack de templates viral"
-  ];
-
-  return (
-    <section className="py-20 bg-dark-bg relative overflow-hidden">
+  const features = ["15+ horas de videoaulas exclusivas", "45+ lições práticas e aplicáveis", "20+ templates prontos para usar", "Suporte direto por 90 dias", "Certificado de conclusão", "Atualizações gratuitas para sempre", "Acesso vitalício ao conteúdo", "Grupo VIP no Telegram", "Bônus: E-book de Growth Hacking", "Bônus: Pack de templates viral"];
+  return <section className="py-20 bg-dark-bg relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-96 h-96 bg-brand-red/20 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-20 right-20 w-80 h-80 bg-brand-yellow/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-20 right-20 w-80 h-80 bg-brand-yellow/20 rounded-full blur-3xl animate-float" style={{
+        animationDelay: '2s'
+      }}></div>
       </div>
 
       <div className="section-container relative">
@@ -85,10 +72,7 @@ const PricingSection = () => {
                 </div>
 
                 {/* CTA Button */}
-                <Button 
-                  size="lg" 
-                  className="w-full bg-cta-gradient hover:shadow-lg hover:shadow-brand-red/25 text-white font-bold px-8 py-6 text-lg rounded-full transition-all duration-300 hover:scale-105 animate-pulse-glow mb-4"
-                >
+                <Button size="lg" className="w-full bg-cta-gradient hover:shadow-lg hover:shadow-brand-red/25 text-white font-bold px-8 py-6 text-lg rounded-full transition-all duration-300 hover:scale-105 animate-pulse-glow mb-4">
                   GARANTIR MINHA VAGA AGORA
                 </Button>
                 
@@ -101,16 +85,12 @@ const PricingSection = () => {
               <div>
                 <h4 className="text-xl font-bold text-white mb-6">O que está incluso:</h4>
                 <div className="space-y-4">
-                  {features.map((feature, index) => (
-                    <div 
-                      key={index}
-                      className="flex items-start space-x-3 animate-fade-in-up"
-                      style={{ animationDelay: `${index * 0.05}s` }}
-                    >
+                  {features.map((feature, index) => <div key={index} className="flex items-start space-x-3 animate-fade-in-up" style={{
+                  animationDelay: `${index * 0.05}s`
+                }}>
                       <Check className="w-5 h-5 text-brand-red mt-0.5 flex-shrink-0" />
                       <span className="text-gray-300">{feature}</span>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
               </div>
             </div>
@@ -118,35 +98,19 @@ const PricingSection = () => {
 
           {/* Bonus Section */}
           <div className="grid md:grid-cols-2 gap-6 mt-8">
-            <div className="glass-card p-6 text-center hover-scale">
-              <div className="w-16 h-16 bg-brand-yellow/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Gift className="w-8 h-8 text-brand-yellow" />
-              </div>
-              <h5 className="font-bold text-white mb-2">Bônus #1</h5>
-              <p className="text-gray-400 text-sm">E-book Growth Hacking</p>
-              <p className="text-brand-red font-bold mt-2">Valor: R$ 97</p>
-            </div>
             
-            <div className="glass-card p-6 text-center hover-scale">
-              <div className="w-16 h-16 bg-brand-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Gift className="w-8 h-8 text-brand-gold" />
-              </div>
-              <h5 className="font-bold text-white mb-2">Bônus #2</h5>
-              <p className="text-gray-400 text-sm">Pack Templates Viral</p>
-              <p className="text-brand-red font-bold mt-2">Valor: R$ 127</p>
-            </div>
+            
+            
           </div>
 
           {/* Total Value */}
           <div className="text-center mt-8 glass-card p-6">
             <p className="text-gray-400 mb-2">Valor total se comprado separadamente:</p>
-            <p className="text-2xl font-bold text-white line-through mb-2">R$ 521</p>
+            <p className="text-2xl font-bold text-white line-through mb-2">R$ 297</p>
             <p className="text-3xl font-bold gradient-text">Hoje por apenas R$ 137,90</p>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default PricingSection;
