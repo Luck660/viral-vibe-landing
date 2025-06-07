@@ -89,19 +89,19 @@ const TestimonialsSection = () => {
         {/* Social Proof Numbers */}
         <div className="mt-20 text-center">
           <div className="glass-card p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-white mb-8">Mais de 50.000 alunos já transformaram suas vidas</h3>
+            <h3 className="text-2xl font-bold text-white mb-8">Mais de 8.000 alunos já transformaram suas vidas</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="text-4xl font-bold gradient-text mb-2">98%</div>
-                <div className="text-gray-400">Taxa de Satisfação</div>
+                <div className="text-4xl font-bold gradient-text mb-2">+8k</div>
+                <div className="text-gray-400">Alunos Transformados</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold gradient-text mb-2">+35k</div>
+                <div className="text-gray-400">Em Vendas Geradas</div>
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold gradient-text mb-2">4.9★</div>
                 <div className="text-gray-400">Avaliação Média</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold gradient-text mb-2">10x</div>
-                <div className="text-gray-400">Crescimento Médio</div>
               </div>
             </div>
           </div>
