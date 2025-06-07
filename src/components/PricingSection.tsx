@@ -20,8 +20,8 @@ const PricingSection = () => {
     <section className="py-20 bg-dark-bg relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-96 h-96 bg-brand-green/20 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-20 right-20 w-80 h-80 bg-brand-purple/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-20 left-20 w-96 h-96 bg-brand-red/20 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-20 right-20 w-80 h-80 bg-brand-yellow/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
       </div>
 
       <div className="section-container relative">
@@ -46,7 +46,7 @@ const PricingSection = () => {
           {/* Main Pricing Card */}
           <div className="glass-card p-10 relative overflow-hidden">
             {/* Popular Badge */}
-            <div className="absolute top-0 right-8 bg-brand-green px-6 py-2 rounded-b-lg">
+            <div className="absolute top-0 right-8 bg-brand-red px-6 py-2 rounded-b-lg">
               <span className="text-white font-bold text-sm">MAIS POPULAR</span>
             </div>
 
@@ -75,11 +75,11 @@ const PricingSection = () => {
                 {/* Guarantees */}
                 <div className="space-y-4 mb-8">
                   <div className="flex items-center justify-center md:justify-start space-x-3">
-                    <Shield className="w-5 h-5 text-brand-green" />
+                    <Shield className="w-5 h-5 text-brand-red" />
                     <span className="text-gray-300">Garantia de 30 dias</span>
                   </div>
                   <div className="flex items-center justify-center md:justify-start space-x-3">
-                    <Gift className="w-5 h-5 text-brand-purple" />
+                    <Gift className="w-5 h-5 text-brand-yellow" />
                     <span className="text-gray-300">Bônus exclusivos inclusos</span>
                   </div>
                 </div>
@@ -87,7 +87,7 @@ const PricingSection = () => {
                 {/* CTA Button */}
                 <Button 
                   size="lg" 
-                  className="w-full bg-cta-gradient hover:shadow-lg hover:shadow-brand-green/25 text-white font-bold px-8 py-6 text-lg rounded-full transition-all duration-300 hover:scale-105 animate-pulse-glow mb-4"
+                  className="w-full bg-cta-gradient hover:shadow-lg hover:shadow-brand-red/25 text-white font-bold px-8 py-6 text-lg rounded-full transition-all duration-300 hover:scale-105 animate-pulse-glow mb-4"
                 >
                   GARANTIR MINHA VAGA AGORA
                 </Button>
@@ -107,7 +107,7 @@ const PricingSection = () => {
                       className="flex items-start space-x-3 animate-fade-in-up"
                       style={{ animationDelay: `${index * 0.05}s` }}
                     >
-                      <Check className="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0" />
+                      <Check className="w-5 h-5 text-brand-red mt-0.5 flex-shrink-0" />
                       <span className="text-gray-300">{feature}</span>
                     </div>
                   ))}
@@ -119,21 +119,21 @@ const PricingSection = () => {
           {/* Bonus Section */}
           <div className="grid md:grid-cols-2 gap-6 mt-8">
             <div className="glass-card p-6 text-center hover-scale">
-              <div className="w-16 h-16 bg-brand-purple/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Gift className="w-8 h-8 text-brand-purple" />
+              <div className="w-16 h-16 bg-brand-yellow/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Gift className="w-8 h-8 text-brand-yellow" />
               </div>
               <h5 className="font-bold text-white mb-2">Bônus #1</h5>
               <p className="text-gray-400 text-sm">E-book Growth Hacking</p>
-              <p className="text-brand-green font-bold mt-2">Valor: R$ 197</p>
+              <p className="text-brand-red font-bold mt-2">Valor: R$ 197</p>
             </div>
             
             <div className="glass-card p-6 text-center hover-scale">
-              <div className="w-16 h-16 bg-brand-blue/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Gift className="w-8 h-8 text-brand-blue" />
+              <div className="w-16 h-16 bg-brand-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Gift className="w-8 h-8 text-brand-gold" />
               </div>
               <h5 className="font-bold text-white mb-2">Bônus #2</h5>
               <p className="text-gray-400 text-sm">Pack Templates Viral</p>
-              <p className="text-brand-green font-bold mt-2">Valor: R$ 297</p>
+              <p className="text-brand-red font-bold mt-2">Valor: R$ 297</p>
             </div>
           </div>
 

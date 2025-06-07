@@ -50,7 +50,7 @@ const TestimonialsSection = () => {
             >
               {/* Quote Icon */}
               <div className="absolute top-4 right-4">
-                <Quote className="w-8 h-8 text-brand-green/30" />
+                <Quote className="w-8 h-8 text-brand-red/30" />
               </div>
 
               {/* Stars */}
@@ -66,13 +66,13 @@ const TestimonialsSection = () => {
               </p>
 
               {/* Results Badge */}
-              <div className="inline-block bg-brand-green/20 text-brand-green px-3 py-1 rounded-full text-sm font-semibold mb-6">
+              <div className="inline-block bg-brand-red/20 text-brand-red px-3 py-1 rounded-full text-sm font-semibold mb-6">
                 {testimonial.results}
               </div>
 
               {/* Author */}
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-brand-purple to-brand-blue rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-brand-yellow to-brand-red rounded-full flex items-center justify-center">
                   <span className="text-white font-bold text-lg">
                     {testimonial.name.charAt(0)}
                   </span>

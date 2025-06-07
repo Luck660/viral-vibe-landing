@@ -45,12 +45,12 @@ const SecretsSection = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-brand-green/20 rounded-lg flex items-center justify-center text-brand-green flex-shrink-0">
+                <div className="w-12 h-12 bg-brand-red/20 rounded-lg flex items-center justify-center text-brand-red flex-shrink-0">
                   {secret.icon}
                 </div>
                 <div className="flex-1">
                   <div className="flex items-start mb-3">
-                    <CheckCircle className="w-5 h-5 text-brand-green mr-2 mt-1 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-brand-red mr-2 mt-1 flex-shrink-0" />
                     <h3 className="text-lg font-semibold text-white leading-tight">
                       {secret.title}
                     </h3>
@@ -81,7 +81,7 @@ const SecretsSection = () => {
                   transform: `translateY(${index % 2 === 0 ? '20px' : '-20px'})` 
                 }}
               >
-                <div className="w-full h-full bg-gradient-to-b from-brand-purple/20 to-brand-blue/20 flex flex-col items-center justify-center p-4">
+                <div className="w-full h-full bg-gradient-to-b from-brand-yellow/20 to-brand-red/20 flex flex-col items-center justify-center p-4">
                   <div className="w-16 h-16 bg-white/20 rounded-full mb-4 flex items-center justify-center">
                     <Heart className="w-8 h-8 text-red-400" />
                   </div>

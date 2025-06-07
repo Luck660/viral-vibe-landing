@@ -9,7 +9,7 @@ const ModulesSection = () => {
       description: "Entenda como funciona o algoritmo das principais redes sociais",
       duration: "2h 30min",
       lessons: 8,
-      color: "brand-purple"
+      color: "brand-yellow"
     },
     {
       number: "02", 
@@ -17,7 +17,7 @@ const ModulesSection = () => {
       description: "Técnicas para criar posts que geram alto engajamento",
       duration: "3h 15min",
       lessons: 12,
-      color: "brand-blue"
+      color: "brand-gold"
     },
     {
       number: "03",
@@ -25,7 +25,7 @@ const ModulesSection = () => {
       description: "Como crescer sua base de seguidores organicamente",
       duration: "2h 45min", 
       lessons: 10,
-      color: "brand-green"
+      color: "brand-red"
     },
     {
       number: "04",
@@ -41,8 +41,8 @@ const ModulesSection = () => {
     <section className="py-20 bg-dark-bg relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full">
-        <div className="absolute top-10 right-10 w-64 h-64 bg-brand-blue/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 left-10 w-80 h-80 bg-brand-purple/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-10 right-10 w-64 h-64 bg-brand-gold/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 left-10 w-80 h-80 bg-brand-yellow/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="section-container relative">
@@ -81,7 +81,7 @@ const ModulesSection = () => {
 
               {/* Module Content */}
               <div className="mb-6">
-                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-brand-green transition-colors">
+                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-brand-red transition-colors">
                   {module.title}
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
@@ -92,11 +92,11 @@ const ModulesSection = () => {
               {/* Module Features */}
               <div className="space-y-2 mb-6">
                 <div className="flex items-center text-gray-300">
-                  <Award className="w-4 h-4 text-brand-green mr-2" />
+                  <Award className="w-4 h-4 text-brand-red mr-2" />
                   <span className="text-sm">Certificado de conclusão</span>
                 </div>
                 <div className="flex items-center text-gray-300">
-                  <Download className="w-4 h-4 text-brand-green mr-2" />
+                  <Download className="w-4 h-4 text-brand-red mr-2" />
                   <span className="text-sm">Material complementar</span>
                 </div>
               </div>
@@ -104,7 +104,7 @@ const ModulesSection = () => {
               {/* Progress Bar */}
               <div className="w-full bg-white/10 rounded-full h-2">
                 <div 
-                  className={`h-2 bg-gradient-to-r from-${module.color} to-brand-green rounded-full transition-all duration-1000 group-hover:w-full`}
+                  className={`h-2 bg-gradient-to-r from-${module.color} to-brand-red rounded-full transition-all duration-1000 group-hover:w-full`}
                   style={{ width: '0%' }}
                 ></div>
               </div>

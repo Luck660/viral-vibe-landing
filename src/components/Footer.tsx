@@ -43,16 +43,16 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-bold text-white mb-4">Informações</h4>
             <div className="space-y-3">
-              <a href="#" className="block text-gray-400 hover:text-brand-green transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-brand-red transition-colors">
                 Termos de Uso
               </a>
-              <a href="#" className="block text-gray-400 hover:text-brand-green transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-brand-red transition-colors">
                 Política de Privacidade
               </a>
-              <a href="#" className="block text-gray-400 hover:text-brand-green transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-brand-red transition-colors">
                 Política de Reembolso
               </a>
-              <a href="#" className="block text-gray-400 hover:text-brand-green transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-brand-red transition-colors">
                 Suporte
               </a>
             </div>
