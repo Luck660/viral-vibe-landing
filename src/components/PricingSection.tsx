@@ -63,20 +63,20 @@ const PricingSection = () => {
                 {/* Price */}
                 <div className="mb-8">
                   <div className="flex items-center justify-center md:justify-start space-x-2 mb-2">
-                    <span className="text-gray-400 line-through text-xl">De R$ 997</span>
-                    <span className="bg-red-500 text-white px-2 py-1 rounded text-sm font-bold">-75%</span>
+                    <span className="text-gray-400 line-through text-xl">De R$ 297</span>
+                    <span className="bg-red-500 text-white px-2 py-1 rounded text-sm font-bold">-53%</span>
                   </div>
                   <div className="text-5xl md:text-6xl font-black gradient-text mb-2">
-                    R$ 247
+                    R$ 137,90
                   </div>
-                  <p className="text-gray-400">ou 12x de R$ 24,70</p>
+                  <p className="text-gray-400">ou 12x de R$ 13,79</p>
                 </div>
 
                 {/* Guarantees */}
                 <div className="space-y-4 mb-8">
                   <div className="flex items-center justify-center md:justify-start space-x-3">
                     <Shield className="w-5 h-5 text-brand-red" />
-                    <span className="text-gray-300">Garantia de 30 dias</span>
+                    <span className="text-gray-300">Garantia de 7 dias</span>
                   </div>
                   <div className="flex items-center justify-center md:justify-start space-x-3">
                     <Gift className="w-5 h-5 text-brand-yellow" />
@@ -124,7 +124,7 @@ const PricingSection = () => {
               </div>
               <h5 className="font-bold text-white mb-2">Bônus #1</h5>
               <p className="text-gray-400 text-sm">E-book Growth Hacking</p>
-              <p className="text-brand-red font-bold mt-2">Valor: R$ 197</p>
+              <p className="text-brand-red font-bold mt-2">Valor: R$ 97</p>
             </div>
             
             <div className="glass-card p-6 text-center hover-scale">
@@ -133,15 +133,15 @@ const PricingSection = () => {
               </div>
               <h5 className="font-bold text-white mb-2">Bônus #2</h5>
               <p className="text-gray-400 text-sm">Pack Templates Viral</p>
-              <p className="text-brand-red font-bold mt-2">Valor: R$ 297</p>
+              <p className="text-brand-red font-bold mt-2">Valor: R$ 127</p>
             </div>
           </div>
 
           {/* Total Value */}
           <div className="text-center mt-8 glass-card p-6">
             <p className="text-gray-400 mb-2">Valor total se comprado separadamente:</p>
-            <p className="text-2xl font-bold text-white line-through mb-2">R$ 1.491</p>
-            <p className="text-3xl font-bold gradient-text">Hoje por apenas R$ 247</p>
+            <p className="text-2xl font-bold text-white line-through mb-2">R$ 521</p>
+            <p className="text-3xl font-bold gradient-text">Hoje por apenas R$ 137,90</p>
           </div>
         </div>
       </div>
