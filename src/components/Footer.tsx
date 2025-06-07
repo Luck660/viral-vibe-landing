@@ -1,5 +1,5 @@
 
-import { Heart, Instagram } from "lucide-react";
+import { Heart, Instagram, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -20,16 +20,23 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Contact Info - Only Instagram */}
+          {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-bold text-white mb-4">Siga-nos</h4>
+            <h4 className="text-lg font-bold text-white mb-4">Contato</h4>
             <div className="space-y-3">
               <a 
-                href="#" 
+                href="mailto:contato@exemplo.com" 
+                className="flex items-center text-gray-400 hover:text-brand-red transition-colors"
+              >
+                <Mail className="w-4 h-4 mr-3" />
+                <span>contato@exemplo.com</span>
+              </a>
+              <a 
+                href="https://instagram.com/fferraz_ofc" 
                 className="flex items-center text-gray-400 hover:text-brand-red transition-colors"
               >
                 <Instagram className="w-4 h-4 mr-3" />
-                <span>@seuinstagram</span>
+                <span>@fferraz_ofc</span>
               </a>
             </div>
           </div>
