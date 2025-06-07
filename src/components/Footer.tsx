@@ -1,11 +1,11 @@
 
-import { Heart, Mail, Phone, MapPin } from "lucide-react";
+import { Heart, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer className="bg-dark-card border-t border-white/10 py-12">
       <div className="section-container">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
           {/* Logo and Description */}
           <div>
             <h3 className="text-2xl font-bold gradient-text mb-4">
@@ -20,40 +20,16 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact Info - Only Instagram */}
           <div>
-            <h4 className="text-lg font-bold text-white mb-4">Contato</h4>
+            <h4 className="text-lg font-bold text-white mb-4">Siga-nos</h4>
             <div className="space-y-3">
-              <div className="flex items-center text-gray-400">
-                <Mail className="w-4 h-4 mr-3" />
-                <span>contato@tornesereferencia.com</span>
-              </div>
-              <div className="flex items-center text-gray-400">
-                <Phone className="w-4 h-4 mr-3" />
-                <span>(11) 99999-9999</span>
-              </div>
-              <div className="flex items-center text-gray-400">
-                <MapPin className="w-4 h-4 mr-3" />
-                <span>São Paulo, SP - Brasil</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Legal Links */}
-          <div>
-            <h4 className="text-lg font-bold text-white mb-4">Informações</h4>
-            <div className="space-y-3">
-              <a href="#" className="block text-gray-400 hover:text-brand-red transition-colors">
-                Termos de Uso
-              </a>
-              <a href="#" className="block text-gray-400 hover:text-brand-red transition-colors">
-                Política de Privacidade
-              </a>
-              <a href="#" className="block text-gray-400 hover:text-brand-red transition-colors">
-                Política de Reembolso
-              </a>
-              <a href="#" className="block text-gray-400 hover:text-brand-red transition-colors">
-                Suporte
+              <a 
+                href="#" 
+                className="flex items-center text-gray-400 hover:text-brand-red transition-colors"
+              >
+                <Instagram className="w-4 h-4 mr-3" />
+                <span>@seuinstagram</span>
               </a>
             </div>
           </div>
