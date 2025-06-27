@@ -25,6 +25,14 @@ const SecretsSection = () => {
     }
   ];
 
+  const phoneExamples = [
+    { views: "156K", image: "" },
+    { views: "851K", image: "" },
+    { views: "347K", image: "" },
+    { views: "273K", image: "" },
+    { views: "387K", image: "" }
+  ];
+
   return (
     <section className="py-16 md:py-20 bg-gradient-to-b from-dark-bg to-dark-card">
       <div className="section-container px-4">
@@ -72,7 +80,7 @@ const SecretsSection = () => {
           </div>
           
           <div className="flex justify-center items-center space-x-2 md:space-x-4 lg:space-x-8 overflow-x-auto pb-8 px-4">
-            {[1, 2, 3, 4, 5].map((_, index) => (
+            {phoneExamples.map((example, index) => (
               <div 
                 key={index}
                 className="w-32 md:w-48 h-64 md:h-96 bg-dark-card rounded-2xl md:rounded-3xl border border-white/10 flex-shrink-0 relative overflow-hidden hover-scale"
@@ -81,15 +89,31 @@ const SecretsSection = () => {
                   transform: `translateY(${index % 2 === 0 ? '10px' : '-10px'})` 
                 }}
               >
-                <div className="w-full h-full bg-gradient-to-b from-brand-yellow/20 to-brand-red/20 flex flex-col items-center justify-center p-3 md:p-4">
-                  <div className="w-12 md:w-16 h-12 md:h-16 bg-white/20 rounded-full mb-3 md:mb-4 flex items-center justify-center">
-                    <Heart className="w-6 md:w-8 h-6 md:h-8 text-red-400" />
+                {example.image ? (
+                  <div className="w-full h-full relative">
+                    <img 
+                      src={example.image} 
+                      alt={`Screenshot ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3 md:p-4">
+                      <div className="text-center">
+                        <div className="text-lg md:text-2xl font-bold text-white mb-1 md:mb-2">{example.views}</div>
+                        <div className="text-xs md:text-sm text-gray-300">Visualizações</div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="text-center">
-                    <div className="text-lg md:text-2xl font-bold text-white mb-1 md:mb-2">{Math.floor(Math.random() * 900 + 100)}K</div>
-                    <div className="text-xs md:text-sm text-gray-300">Visualizações</div>
+                ) : (
+                  <div className="w-full h-full bg-gradient-to-b from-brand-yellow/20 to-brand-red/20 flex flex-col items-center justify-center p-3 md:p-4">
+                    <div className="w-12 md:w-16 h-12 md:h-16 bg-white/20 rounded-full mb-3 md:mb-4 flex items-center justify-center">
+                      <Heart className="w-6 md:w-8 h-6 md:h-8 text-red-400" />
+                    </div>
+                    <div className="text-center">
+                      <div className="text-lg md:text-2xl font-bold text-white mb-1 md:mb-2">{example.views}</div>
+                      <div className="text-xs md:text-sm text-gray-300">Visualizações</div>
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             ))}
           </div>

@@ -38,17 +38,28 @@ const Hero = () => {
             criar conteúdo de alto impacto e transformar seguidores em <strong className="text-brand-red">clientes fiéis</strong>
           </p>
 
-          {/* Video Section */}
+          {/* Video Section - VSL */}
           <div className="relative max-w-2xl mx-auto mb-8 md:mb-12 animate-fade-in-up px-4" style={{
             animationDelay: '0.6s'
           }}>
-            <div className="aspect-video bg-gradient-to-br from-dark-card to-dark-bg rounded-xl md:rounded-2xl border border-white/10 flex items-center justify-center group cursor-pointer hover-scale">
-              <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-3 text-white group-hover:text-brand-red transition-colors">
-                <div className="w-12 md:w-16 h-12 md:h-16 bg-brand-red rounded-full flex items-center justify-center animate-pulse-glow">
-                  <Play className="w-4 md:w-6 h-4 md:h-6 ml-1" fill="currentColor" />
+            <div className="aspect-video bg-gradient-to-br from-dark-card to-dark-bg rounded-xl md:rounded-2xl border border-white/10 overflow-hidden">
+              <video 
+                className="w-full h-full object-cover"
+                poster="/lovable-uploads/b0b162bd-dedf-427f-9175-d760938f062c.png"
+                controls
+                preload="metadata"
+              >
+                <source src="" type="video/mp4" />
+                {/* Fallback content */}
+                <div className="w-full h-full flex items-center justify-center">
+                  <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-3 text-white group cursor-pointer">
+                    <div className="w-12 md:w-16 h-12 md:h-16 bg-brand-red rounded-full flex items-center justify-center animate-pulse-glow">
+                      <Play className="w-4 md:w-6 h-4 md:h-6 ml-1" fill="currentColor" />
+                    </div>
+                    <span className="text-sm md:text-lg font-semibold text-center">Assista o Vídeo Exclusivo</span>
+                  </div>
                 </div>
-                <span className="text-sm md:text-lg font-semibold text-center">Assista o Vídeo Exclusivo</span>
-              </div>
+              </video>
             </div>
           </div>
 
