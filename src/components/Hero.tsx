@@ -43,23 +43,16 @@ const Hero = () => {
             animationDelay: '0.6s'
           }}>
             <div className="aspect-video bg-gradient-to-br from-dark-card to-dark-bg rounded-xl md:rounded-2xl border border-white/10 overflow-hidden">
-              <video 
-                className="w-full h-full object-cover"
-                poster="/lovable-uploads/b0b162bd-dedf-427f-9175-d760938f062c.png"
-                controls
-                preload="metadata"
-              >
-                <source src="" type="video/mp4" />
-                {/* Fallback content */}
-                <div className="w-full h-full flex items-center justify-center">
-                  <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-3 text-white group cursor-pointer">
-                    <div className="w-12 md:w-16 h-12 md:h-16 bg-brand-red rounded-full flex items-center justify-center animate-pulse-glow">
-                      <Play className="w-4 md:w-6 h-4 md:h-6 ml-1" fill="currentColor" />
-                    </div>
-                    <span className="text-sm md:text-lg font-semibold text-center">Assista o Vídeo Exclusivo</span>
-                  </div>
-                </div>
-              </video>
+              <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+                <iframe 
+                  src="https://player.vimeo.com/video/1111417418?badge=0&autopause=0&player_id=0&app_id=58479" 
+                  frameBorder="0" 
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                  title="Vsl - Seja uma Referência"
+                />
+              </div>
             </div>
           </div>
 
