@@ -10,7 +10,7 @@ const ModulesSection = () => {
   }, {
     number: "02",
     title: "Criação de Conteúdo Viral",
-    description: "Técnicas para criar posts que geram alto engajamento",
+    description: "Aprenda as técnicas que eu mesmo uso para criar posts que explodem em alcance, geram engajamento real e atraem seguidores todos os dias.",
     duration: "3h 15min",
     lessons: 12,
     color: "brand-gold"
