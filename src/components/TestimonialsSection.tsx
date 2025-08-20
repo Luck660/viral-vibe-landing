@@ -9,7 +9,7 @@ const TestimonialsSection = () => {
     results: "+900% seguidores"
   }, {
     name: "João Santos",
-    role: "Coach de Vendas",
+    role: "Criador de Conteúdo",
     image: "/lovable-uploads/d7dde467-9d02-480e-99dc-a83d3e7b101f.png",
     content: "Nunca pensei que conseguiria viralizar. Hoje meus vídeos chegam a 2 milhões de visualizações. Curso incrível!",
     rating: 5,
