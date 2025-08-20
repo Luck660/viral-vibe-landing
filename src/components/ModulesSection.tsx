@@ -17,7 +17,7 @@ const ModulesSection = () => {
   }, {
     number: "03",
     title: "Estratégias de Crescimento",
-    description: "Como crescer sua base de seguidores organicamente",
+    description: "Vou te mostrar passo a passo como aumentar sua base de seguidores de forma orgânica, sem precisar gastar com anúncios, usando as mesmas estratégias que realmente funcionam em 2025.",
     duration: "2h 45min",
     lessons: 10,
     color: "brand-red"
