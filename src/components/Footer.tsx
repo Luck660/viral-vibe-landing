@@ -31,9 +31,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-6 md:pt-8 text-center">
-          <p className="text-xs md:text-sm text-gray-400">
-            © 2024 Torne-se uma Referência. Todos os direitos reservados.
-          </p>
+          <p className="text-xs md:text-sm text-gray-400">© 2025 Torne-se uma Referência. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>;
