@@ -81,9 +81,11 @@ const Hero = () => {
           <div className="animate-fade-in-up px-4" style={{
             animationDelay: '1s'
           }}>
-            <Button size="lg" className="w-full md:w-auto bg-cta-gradient hover:shadow-lg hover:shadow-brand-red/25 text-white font-bold px-8 md:px-12 py-4 md:py-6 text-base md:text-lg rounded-full transition-all duration-300 hover:scale-105 animate-pulse-glow">
-              QUERO VIRALIZAR AGORA
-            </Button>
+            <a href="https://pay.kiwify.com.br/TSyDFg8" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="w-full md:w-auto bg-cta-gradient hover:shadow-lg hover:shadow-brand-red/25 text-white font-bold px-8 md:px-12 py-4 md:py-6 text-base md:text-lg rounded-full transition-all duration-300 hover:scale-105 animate-pulse-glow">
+                QUERO VIRALIZAR AGORA
+              </Button>
+            </a>
             <p className="text-xs md:text-sm text-gray-400 mt-3 md:mt-4">🔥 Mais de 37 pessoas se inscreveram hoje</p>
           </div>
         </div>
