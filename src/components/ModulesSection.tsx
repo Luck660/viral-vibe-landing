@@ -57,8 +57,8 @@ const ModulesSection = () => {
                 </div>
                 <div className="flex items-center space-x-2 md:space-x-4 text-gray-400">
                   <div className="flex items-center space-x-1">
-                    <Clock className="w-3 md:w-4 h-3 md:h-4" />
-                    <span className="text-xs md:text-sm">{module.duration}</span>
+                    
+                    
                   </div>
                 </div>
               </div>
@@ -109,7 +109,7 @@ const ModulesSection = () => {
               </div>
               <div>
                 <div className="text-2xl md:text-3xl font-bold gradient-text">20+</div>
-                <div className="text-xs md:text-base text-gray-400">Musicas virais</div>
+                <div className="text-xs md:text-base text-gray-400">Templates</div>
               </div>
               <div>
                 <div className="text-2xl md:text-3xl font-bold gradient-text">24/7</div>
