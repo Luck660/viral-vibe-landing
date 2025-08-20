@@ -2,7 +2,7 @@ import { Star, Quote } from "lucide-react";
 const TestimonialsSection = () => {
   const testimonials = [{
     name: "Fabio G. Neves",
-    role: "Empreendedor Digital",
+    role: "Criador de Conteúdo",
     image: "/lovable-uploads/d7dde467-9d02-480e-99dc-a83d3e7b101f.png",
     content: "Em apenas 30 dias aplicando as estratégias do curso, meu perfil saltou de 5k para 50k seguidores! As vendas aumentaram 300%.",
     rating: 5,
