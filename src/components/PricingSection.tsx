@@ -85,25 +85,32 @@ const PricingSection = () => {
 
               {/* Right Side - Features */}
               <div>
-                <h4 className="text-lg md:text-xl mb-4 md:mb-6 font-bold text-center text-gray-50">Bônus exclusivo</h4>
+                <h4 className="text-lg md:text-xl mb-4 md:mb-6 font-bold text-center text-gray-50">🎁 Bônus Exclusivo:</h4>
+                <p className="text-sm md:text-base text-gray-300 mb-4 md:mb-6 text-center">
+                  Ao garantir seu acesso, você ainda recebe:
+                </p>
                 <div className="space-y-3 md:space-y-4">
-                  {features.map((feature, index) => <div key={index} className="flex items-start space-x-3 animate-fade-in-up" style={{
-                  animationDelay: `${index * 0.05}s`
-                }}>
-                      <Check className="w-4 md:w-5 h-4 md:h-5 text-brand-red mt-0.5 flex-shrink-0" />
-                      <span className="text-sm md:text-base text-gray-300">{feature}</span>
-                    </div>)}
+                  <div className="flex items-start space-x-3 animate-fade-in-up">
+                    <Check className="w-4 md:w-5 h-4 md:h-5 text-brand-red mt-0.5 flex-shrink-0" />
+                    <span className="text-sm md:text-base text-gray-300">Minha playlist de músicas exclusivas</span>
+                  </div>
+                  <div className="flex items-start space-x-3 animate-fade-in-up" style={{animationDelay: '0.05s'}}>
+                    <Check className="w-4 md:w-5 h-4 md:h-5 text-brand-red mt-0.5 flex-shrink-0" />
+                    <span className="text-sm md:text-base text-gray-300">Checklist completo pra criar do zero</span>
+                  </div>
+                  <div className="flex items-start space-x-3 animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+                    <Check className="w-4 md:w-5 h-4 md:h-5 text-brand-red mt-0.5 flex-shrink-0" />
+                    <span className="text-sm md:text-base text-gray-300">E-book de estratégias avançadas</span>
+                  </div>
+                  <div className="flex items-start space-x-3 animate-fade-in-up" style={{animationDelay: '0.15s'}}>
+                    <Check className="w-4 md:w-5 h-4 md:h-5 text-brand-red mt-0.5 flex-shrink-0" />
+                    <span className="text-sm md:text-base text-gray-300">Comunidade exclusiva para suporte e networking</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Total Value */}
-          <div className="text-center mt-6 md:mt-8 glass-card p-4 md:p-6">
-            <p className="text-sm md:text-base text-gray-400 mb-2">Valor total se comprado separadamente:</p>
-            <p className="text-xl md:text-2xl font-bold text-white line-through mb-2">R$ 297</p>
-            <p className="text-2xl md:text-3xl font-bold gradient-text">Hoje por apenas R$ 137,90</p>
-          </div>
         </div>
       </div>
     </section>;
