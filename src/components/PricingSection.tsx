@@ -85,7 +85,7 @@ const PricingSection = () => {
 
               {/* Right Side - Features */}
               <div>
-                <h4 className="text-lg md:text-xl font-bold text-white mb-4 md:mb-6">O que está incluso:</h4>
+                <h4 className="text-lg md:text-xl mb-4 md:mb-6 font-bold text-center text-gray-50">Bônus exclusivo</h4>
                 <div className="space-y-3 md:space-y-4">
                   {features.map((feature, index) => <div key={index} className="flex items-start space-x-3 animate-fade-in-up" style={{
                   animationDelay: `${index * 0.05}s`
