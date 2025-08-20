@@ -87,9 +87,11 @@ const PricingSection = () => {
                 </div>
 
                 {/* CTA Button */}
-                <Button size="lg" className="w-full bg-cta-gradient hover:shadow-lg hover:shadow-brand-red/25 text-white font-bold px-6 md:px-8 py-4 md:py-6 text-sm md:text-lg rounded-full transition-all duration-300 hover:scale-105 animate-pulse-glow mb-3 md:mb-4">
-                  GARANTIR MINHA VAGA AGORA
-                </Button>
+                <a href="https://pay.kiwify.com.br/TSyDFg8" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="w-full bg-cta-gradient hover:shadow-lg hover:shadow-brand-red/25 text-white font-bold px-6 md:px-8 py-4 md:py-6 text-sm md:text-lg rounded-full transition-all duration-300 hover:scale-105 animate-pulse-glow mb-3 md:mb-4">
+                    GARANTIR MINHA VAGA AGORA
+                  </Button>
+                </a>
                 
                 <p className="text-xs md:text-sm text-gray-400">
                   🔒 Pagamento 100% seguro • SSL Certificado
