@@ -109,7 +109,7 @@ const ModulesSection = () => {
               </div>
               <div>
                 <div className="text-2xl md:text-3xl font-bold gradient-text">20+</div>
-                <div className="text-xs md:text-base text-gray-400">Templates</div>
+                <div className="text-xs md:text-base text-gray-400">Musicas Virais</div>
               </div>
               <div>
                 <div className="text-2xl md:text-3xl font-bold gradient-text">24/7</div>
