@@ -26,11 +26,11 @@ const SecretsSection = () => {
   ];
 
   const phoneExamples = [
-    { views: "156K", image: "" },
-    { views: "851K", image: "" },
-    { views: "347K", image: "" },
-    { views: "273K", image: "" },
-    { views: "387K", image: "" }
+    { views: "9.7K", image: "/lovable-uploads/652f9955-825e-4116-841b-0498a506276b.png" },
+    { views: "58.7K", image: "/lovable-uploads/f466fd87-4190-4787-a64c-f77aad2dbf9f.png" },
+    { views: "1.4M", image: "/lovable-uploads/2d5c9081-0573-4926-a659-08738603778b.png" },
+    { views: "8.1M", image: "/lovable-uploads/9c923c20-bd27-40c9-88bf-8e12ae001ab5.png" },
+    { views: "21.7M", image: "/lovable-uploads/17909048-9fdc-42a0-85ae-20a14d19152f.png" }
   ];
 
   return (
