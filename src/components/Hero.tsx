@@ -34,7 +34,7 @@ const Hero = () => {
           <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-6 md:mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in-up px-2" style={{
             animationDelay: '0.4s'
           }}>
-            Descubra as estratégias secretas que os <strong className="text-brand-red">influenciadores de sucesso</strong> usam para viralizar, 
+            Descubra as minhas estratégias secretas que uso para viralizar, 
             criar conteúdo de alto impacto e transformar seguidores em <strong className="text-brand-red">clientes fiéis</strong>
           </p>
 
