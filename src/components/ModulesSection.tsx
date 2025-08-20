@@ -76,8 +76,8 @@ const ModulesSection = () => {
               {/* Module Features */}
               <div className="space-y-2 mb-4 md:mb-6">
                 <div className="flex items-center text-gray-300">
-                  <Award className="w-3 md:w-4 h-3 md:h-4 text-brand-red mr-2" />
-                  <span className="text-xs md:text-sm">Certificado de conclusão</span>
+                  
+                  
                 </div>
                 <div className="flex items-center text-gray-300">
                   <Download className="w-3 md:w-4 h-3 md:h-4 text-brand-red mr-2" />
