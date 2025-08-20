@@ -38,10 +38,11 @@ const SecretsSection = () => {
       <div className="section-container px-4">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 px-2">
-            Os <span className="gradient-text">Segredos</span> para Viralizar
+            Meus <span className="gradient-text">Segredos</span> para Viralizar
           </h2>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-2">
-            Descubra as estratégias que os maiores influenciadores usam para conseguir milhões de visualizações
+            Vou revelar as minhas próprias estratégias que realmente funcionam para crescer no digital.
+            Além disso, vou expor os truques que muitos influenciadores usam em segredo, mas nunca contam a verdade sobre como conseguir milhões de visualizações.
           </p>
         </div>
 
