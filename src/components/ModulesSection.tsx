@@ -24,7 +24,7 @@ const ModulesSection = () => {
   }, {
     number: "04",
     title: "Monetização e Vendas",
-    description: "Transforme seu conteúdo em uma máquina de vendas",
+    description: "Aprenda como transformar seu conteúdo em uma verdadeira máquina de vendas, usando as estratégias que eu aplico para converter seguidores em clientes todos os dias.",
     duration: "4h 20min",
     lessons: 15,
     color: "brand-orange"
