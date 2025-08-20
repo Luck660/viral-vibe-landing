@@ -85,7 +85,7 @@ const SecretsSection = () => {
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3 md:p-4">
                       <div className="text-center">
                         
-                        <div className="text-xs md:text-sm text-gray-300">Visualizações</div>
+                        
                       </div>
                     </div>
                   </div> : <div className="w-full h-full bg-gradient-to-b from-brand-yellow/20 to-brand-red/20 flex flex-col items-center justify-center p-3 md:p-4">
