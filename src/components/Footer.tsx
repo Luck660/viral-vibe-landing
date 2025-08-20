@@ -1,9 +1,6 @@
-
 import { Heart, Instagram, Mail } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-dark-card border-t border-white/10 py-8 md:py-12">
+  return <footer className="bg-dark-card border-t border-white/10 py-8 md:py-12">
       <div className="section-container px-4">
         <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-6 md:mb-8">
           {/* Logo and Description */}
@@ -20,17 +17,11 @@ const Footer = () => {
           <div>
             <h4 className="text-base md:text-lg font-bold text-white mb-3 md:mb-4">Contato</h4>
             <div className="space-y-2 md:space-y-3">
-              <a 
-                href="mailto:fferraz.oficial@contato.com" 
-                className="flex items-center text-sm md:text-base text-gray-400 hover:text-brand-red transition-colors"
-              >
+              <a href="mailto:fferraz.oficial@contato.com" className="flex items-center text-sm md:text-base text-gray-400 hover:text-brand-red transition-colors">
                 <Mail className="w-4 h-4 mr-2 md:mr-3" />
-                <span>fferraz.oficial@contato.com</span>
+                <span>referencia.ofc@gmail.com</span>
               </a>
-              <a 
-                href="https://instagram.com/fferraz_ofc" 
-                className="flex items-center text-sm md:text-base text-gray-400 hover:text-brand-red transition-colors"
-              >
+              <a href="https://instagram.com/fferraz_ofc" className="flex items-center text-sm md:text-base text-gray-400 hover:text-brand-red transition-colors">
                 <Instagram className="w-4 h-4 mr-2 md:mr-3" />
                 <span>@fferraz_ofc</span>
               </a>
@@ -45,8 +36,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
