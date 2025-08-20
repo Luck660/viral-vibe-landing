@@ -1,36 +1,28 @@
-
 import { Star, Quote } from "lucide-react";
-
 const TestimonialsSection = () => {
-  const testimonials = [
-    {
-      name: "Maria Silva",
-      role: "Empreendedora Digital",
-      image: "/lovable-uploads/d7dde467-9d02-480e-99dc-a83d3e7b101f.png",
-      content: "Em apenas 30 dias aplicando as estratégias do curso, meu perfil saltou de 5k para 50k seguidores! As vendas aumentaram 300%.",
-      rating: 5,
-      results: "+900% seguidores"
-    },
-    {
-      name: "João Santos",
-      role: "Coach de Vendas",
-      image: "/lovable-uploads/d7dde467-9d02-480e-99dc-a83d3e7b101f.png",
-      content: "Nunca pensei que conseguiria viralizar. Hoje meus vídeos chegam a 2 milhões de visualizações. Curso incrível!",
-      rating: 5,
-      results: "2M visualizações"
-    },
-    {
-      name: "Ana Costa",
-      role: "Influenciadora",
-      image: "/lovable-uploads/d7dde467-9d02-480e-99dc-a83d3e7b101f.png",
-      content: "As técnicas de copywriting transformaram completamente meus posts. Agora cada publicação gera centenas de leads.",
-      rating: 5,
-      results: "+500 leads/mês"
-    }
-  ];
-
-  return (
-    <section className="py-16 md:py-20 bg-gradient-to-b from-dark-card to-dark-bg">
+  const testimonials = [{
+    name: "Maria Silva",
+    role: "Empreendedora Digital",
+    image: "/lovable-uploads/d7dde467-9d02-480e-99dc-a83d3e7b101f.png",
+    content: "Em apenas 30 dias aplicando as estratégias do curso, meu perfil saltou de 5k para 50k seguidores! As vendas aumentaram 300%.",
+    rating: 5,
+    results: "+900% seguidores"
+  }, {
+    name: "João Santos",
+    role: "Coach de Vendas",
+    image: "/lovable-uploads/d7dde467-9d02-480e-99dc-a83d3e7b101f.png",
+    content: "Nunca pensei que conseguiria viralizar. Hoje meus vídeos chegam a 2 milhões de visualizações. Curso incrível!",
+    rating: 5,
+    results: "2M visualizações"
+  }, {
+    name: "Ana Costa",
+    role: "Influenciadora",
+    image: "/lovable-uploads/d7dde467-9d02-480e-99dc-a83d3e7b101f.png",
+    content: "As técnicas de copywriting transformaram completamente meus posts. Agora cada publicação gera centenas de leads.",
+    rating: 5,
+    results: "+500 leads/mês"
+  }];
+  return <section className="py-16 md:py-20 bg-gradient-to-b from-dark-card to-dark-bg">
       <div className="section-container px-4">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 px-2">
@@ -42,12 +34,9 @@ const TestimonialsSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
-          {testimonials.map((testimonial, index) => (
-            <div 
-              key={index}
-              className="glass-card p-6 md:p-8 hover-scale animate-fade-in-up relative"
-              style={{ animationDelay: `${index * 0.2}s` }}
-            >
+          {testimonials.map((testimonial, index) => <div key={index} className="glass-card p-6 md:p-8 hover-scale animate-fade-in-up relative" style={{
+          animationDelay: `${index * 0.2}s`
+        }}>
               {/* Quote Icon */}
               <div className="absolute top-3 md:top-4 right-3 md:right-4">
                 <Quote className="w-6 md:w-8 h-6 md:h-8 text-brand-red/30" />
@@ -55,9 +44,7 @@ const TestimonialsSection = () => {
 
               {/* Stars */}
               <div className="flex space-x-1 mb-3 md:mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-4 md:w-5 h-4 md:h-5 text-yellow-400 fill-current" />
-                ))}
+                {[...Array(testimonial.rating)].map((_, i) => <Star key={i} className="w-4 md:w-5 h-4 md:h-5 text-yellow-400 fill-current" />)}
               </div>
 
               {/* Content */}
@@ -77,14 +64,13 @@ const TestimonialsSection = () => {
                   <div className="text-gray-400 text-xs md:text-sm">{testimonial.role}</div>
                 </div>
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Social Proof Numbers */}
         <div className="mt-16 md:mt-20 text-center">
           <div className="glass-card p-6 md:p-8 max-w-4xl mx-auto">
-            <h3 className="text-lg md:text-2xl font-bold text-white mb-6 md:mb-8 px-2">Mais de 8.000 alunos já transformaram suas vidas</h3>
+            <h3 className="text-lg md:text-2xl font-bold text-white mb-6 md:mb-8 px-2">Mais de 488 alunos já transformaram suas vidas</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold gradient-text mb-2">98%</div>
@@ -98,8 +84,6 @@ const TestimonialsSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default TestimonialsSection;
