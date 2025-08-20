@@ -3,7 +3,7 @@ const ModulesSection = () => {
   const modules = [{
     number: "01",
     title: "Fundamentos da Viralização",
-    description: "Entenda como funciona o algoritmo das principais redes sociais",
+    description: "Descubra, de forma clara e prática, como o algoritmo realmente funciona e como você pode usá-lo a seu favor para crescer mais rápido nas redes sociais.",
     duration: "2h 30min",
     lessons: 8,
     color: "brand-yellow"
