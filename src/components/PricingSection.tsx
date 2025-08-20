@@ -1,29 +1,14 @@
-
 import { Button } from "@/components/ui/button";
 import { Check, Clock, Shield, Gift } from "lucide-react";
-
 const PricingSection = () => {
-  const features = [
-    "15+ horas de videoaulas exclusivas",
-    "45+ lições práticas e aplicáveis", 
-    "20+ templates prontos para usar",
-    "Suporte direto por 90 dias",
-    "Certificado de conclusão",
-    "Atualizações gratuitas para sempre",
-    "Acesso vitalício ao conteúdo",
-    "Grupo VIP no Telegram",
-    "Bônus: E-book de Growth Hacking",
-    "Bônus: Pack de templates viral"
-  ];
-
-  return (
-    <section className="py-16 md:py-20 bg-dark-bg relative overflow-hidden">
+  const features = ["15+ horas de videoaulas exclusivas", "45+ lições práticas e aplicáveis", "20+ templates prontos para usar", "Suporte direto por 90 dias", "Certificado de conclusão", "Atualizações gratuitas para sempre", "Acesso vitalício ao conteúdo", "Grupo VIP no Telegram", "Bônus: E-book de Growth Hacking", "Bônus: Pack de templates viral"];
+  return <section className="py-16 md:py-20 bg-dark-bg relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-4 md:left-20 w-64 md:w-96 h-64 md:h-96 bg-brand-red/20 rounded-full blur-3xl animate-float"></div>
         <div className="absolute bottom-20 right-4 md:right-20 w-48 md:w-80 h-48 md:h-80 bg-brand-yellow/20 rounded-full blur-3xl animate-float" style={{
-          animationDelay: '2s'
-        }}></div>
+        animationDelay: '2s'
+      }}></div>
       </div>
 
       <div className="section-container relative px-4">
@@ -102,16 +87,12 @@ const PricingSection = () => {
               <div>
                 <h4 className="text-lg md:text-xl font-bold text-white mb-4 md:mb-6">O que está incluso:</h4>
                 <div className="space-y-3 md:space-y-4">
-                  {features.map((feature, index) => (
-                    <div 
-                      key={index}
-                      className="flex items-start space-x-3 animate-fade-in-up"
-                      style={{ animationDelay: `${index * 0.05}s` }}
-                    >
+                  {features.map((feature, index) => <div key={index} className="flex items-start space-x-3 animate-fade-in-up" style={{
+                  animationDelay: `${index * 0.05}s`
+                }}>
                       <Check className="w-4 md:w-5 h-4 md:h-5 text-brand-red mt-0.5 flex-shrink-0" />
                       <span className="text-sm md:text-base text-gray-300">{feature}</span>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
               </div>
             </div>
@@ -125,8 +106,6 @@ const PricingSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default PricingSection;
