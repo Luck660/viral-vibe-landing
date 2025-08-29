@@ -56,7 +56,7 @@ const PricingSection = () => {
                   <div className="text-4xl md:text-5xl lg:text-6xl font-black gradient-text mb-2">
                     R$ 137,00
                   </div>
-                  <p className="text-sm md:text-base text-gray-400">ou 12x de R$ 11,42</p>
+                  <p className="text-sm md:text-base text-gray-400">ou 2x de R$ 68,50</p>
                 </div>
 
                 {/* Guarantees */}
