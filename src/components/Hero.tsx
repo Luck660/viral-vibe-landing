@@ -44,13 +44,21 @@ const Hero = () => {
               padding: '56.25% 0 0 0',
               position: 'relative'
             }}>
-                <iframe src="https://player.vimeo.com/video/1111521142?badge=0&autopause=0&player_id=0&app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerPolicy="strict-origin-when-cross-origin" style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%'
-              }} title="Torne-se uma referência" />
+                <iframe 
+                  src="https://player.vimeo.com/video/1111521142?badge=0&autopause=0&player_id=0&app_id=58479" 
+                  frameBorder="0" 
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  loading="lazy"
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%'
+                  }} 
+                  title="Torne-se uma referência - Curso completo para viralizar nas redes sociais" 
+                />
               </div>
             </div>
           </div>
