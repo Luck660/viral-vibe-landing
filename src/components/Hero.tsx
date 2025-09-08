@@ -35,37 +35,10 @@ const Hero = () => {
             criar conteúdo de alto impacto e transformar seguidores em <strong className="text-brand-red">clientes fiéis</strong>
           </p>
 
-          {/* Video Section - VSL */}
-          <div className="relative max-w-2xl mx-auto mb-8 md:mb-12 animate-fade-in-up px-4" style={{
-          animationDelay: '0.6s'
-        }}>
-            <div className="aspect-video bg-gradient-to-br from-dark-card to-dark-bg rounded-xl md:rounded-2xl border border-white/10 overflow-hidden">
-              <div style={{
-              padding: '56.25% 0 0 0',
-              position: 'relative'
-            }}>
-                <iframe 
-                  src="https://player.vimeo.com/video/1111521142?badge=0&autopause=0&player_id=0&app_id=58479" 
-                  frameBorder="0" 
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-                  referrerPolicy="strict-origin-when-cross-origin" 
-                  loading="lazy"
-                  style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%'
-                  }} 
-                  title="Torne-se uma referência - Curso completo para viralizar nas redes sociais" 
-                />
-              </div>
-            </div>
-          </div>
 
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mb-8 md:mb-12 animate-fade-in-up px-2" style={{
-          animationDelay: '0.8s'
+          animationDelay: '0.6s'
         }}>
             <div className="glass-card p-4 md:p-6 text-center hover-scale">
               <Users className="w-6 md:w-8 h-6 md:h-8 text-brand-gold mx-auto mb-2 md:mb-3" />
@@ -86,7 +59,7 @@ const Hero = () => {
 
           {/* CTA Button */}
           <div className="animate-fade-in-up px-4" style={{
-          animationDelay: '1s'
+          animationDelay: '0.8s'
         }}>
             <a href="https://pay.kiwify.com.br/TSyDFg8" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="w-full md:w-auto bg-cta-gradient hover:shadow-lg hover:shadow-brand-red/25 text-white font-bold px-8 md:px-12 py-4 md:py-6 text-base md:text-lg rounded-full transition-all duration-300 hover:scale-105 animate-pulse-glow">
