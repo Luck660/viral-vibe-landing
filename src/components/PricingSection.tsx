@@ -51,12 +51,12 @@ const PricingSection = () => {
                 <div className="mb-6 md:mb-8">
                   <div className="flex items-center justify-center md:justify-start space-x-2 mb-2">
                     <span className="text-gray-400 line-through text-lg md:text-xl">De 137,00</span>
-                    <span className="bg-red-500 text-white px-2 py-1 rounded text-xs md:text-sm font-bold">-64%</span>
+                    <span className="bg-red-500 text-white px-2 py-1 rounded text-xs md:text-sm font-bold">-51%</span>
                   </div>
                   <div className="text-4xl md:text-5xl lg:text-6xl font-black gradient-text mb-2">
                     R$ 67,00
                   </div>
-                  <p className="text-sm md:text-base text-gray-400">ou 2x de R$ 24,95</p>
+                  <p className="text-sm md:text-base text-gray-400">ou 2x de R$ 33,50</p>
                 </div>
 
                 {/* Guarantees */}
