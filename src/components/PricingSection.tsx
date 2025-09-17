@@ -54,7 +54,7 @@ const PricingSection = () => {
                     <span className="bg-red-500 text-white px-2 py-1 rounded text-xs md:text-sm font-bold">-64%</span>
                   </div>
                   <div className="text-4xl md:text-5xl lg:text-6xl font-black gradient-text mb-2">
-                    R$ 49,90
+                    R$ 67,00
                   </div>
                   <p className="text-sm md:text-base text-gray-400">ou 2x de R$ 24,95</p>
                 </div>
